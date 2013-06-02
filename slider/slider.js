@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Daily Bruin | Graduation Issue 2013</title>
+    <title></title>
     <meta content="">
     <style></style>
   </head>
