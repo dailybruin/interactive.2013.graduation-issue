@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+#page {
+    width: 1170px;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+}
