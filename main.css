@@ -27,12 +27,12 @@ h1, h2, h3, h4 {
     font-weight: 300;
     padding: 0;
     margin: 0;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     text-shadow: 0 0 5px #fff;
 }
 
 nav {
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-size: 1.8em;
     width: 100%;
     height: 40px;
