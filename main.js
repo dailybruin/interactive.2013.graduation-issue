@@ -14,7 +14,8 @@ $(document).ready(function(){
         //roll up all uls
         $('#article-list ul').slideUp();
         if (!$('#article-list #'+id).is(':visible')) { //skip if the section clicked is already visible (prevents a "bounce")
-            $('#article-list #'+id).slideToggle();
+            $('#article-list #'+id).slideDown();
+            //$('#'+id+':before').css({'margin-right': '10px'}); not working
         }
         return false;
     });
