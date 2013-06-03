@@ -1,0 +1,13 @@
+aside {
+    
+}
+
+aside #left {
+    float: left;
+    margin-right: 20px;
+}
+
+aside #right {
+    float: right;
+    margin-left: 20px;
+}
