@@ -94,6 +94,17 @@ footer {
     text-align: center;
 }
 
+#plate {
+    padding: 5px 0 0 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;  
+    font-size: 1.2em;
+}
+
+#plate img {
+    display: block;
+}
+
 #page {
     width: 1170px;
     margin: 0 auto 30px auto;
@@ -102,13 +113,6 @@ footer {
     -webkit-box-shadow: 0px 5px 30px 0 rgba(0,0,0, 0.3);
     box-shadow:         0px 5px 30px 0 rgba(0,0,0, 0.3);
     overflow: hidden;
-}
-
-#plate {
-    padding: 0 0 0 5px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;  
-    font-size: 1.2em;
 }
 
 #tagline {
