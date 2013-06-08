@@ -22,35 +22,53 @@ var dates = [
 		"Jun. 2012",
 		"Jul. 2012",
 		"Aug. 2012",
-		"Sept. 2012",
-		"Oct. 2012",
-		"Nov. 2012"
+		"...Present"
 	];
 
 var bands = {
-	"Free Food":{"start":1},
-	"Alto":{"start":3},
-	"The Ten Thousand":{"start":6},
-	"The Internship":{"start":6},
-	"Owl Fly South":{"start":7}
+	"Free Food":{
+		start:1,
+		preview:"<h2>Free Food</h2><p>October 2010</p>"
+	},
+	"Alto":{
+		start:3,
+		preview:"<h2>Alto</h2><p>December 2010</p>"
+	},
+	"The Ten Thousand":{
+		start:6,
+		preview:"<h2>The Ten Thousand</h2><p>April 2011</p>"
+	},
+	"The Internship":{
+		start:6,
+		preview:"<h2>The Internship</h2><p>(Manzanita)</p><p>April 2011</p>"
+	},
+	"Owl Fly South":{
+		start:7,
+		preview:"<h2>Owl Fly South</h2><p>May 2011</p>"
+	}
 }
 
 var venues = {
 	midSesh:{
-		start:3,
-		end:12
+		start:4,
+		end:13,
+		preview:"<h2>Midvale Session</h2><p>January 2011</p>"
 	},
 	treeHouse:{
-		start:6
+		start:7,
+		preview:"<h2>Treehouse Open Mic</h2><p>April 2011</p>"
 	},
 	coOp:{
-		start:7
+		start:8,
+		preview:"<h2>UCLA Radio Presents the first Co-op show</h2><p>May 2011</p>"
 	},
 	outsideWW:{
-		start:20
+		start:21,
+		preview:"<h2>All the bands start playing outside of Westwood</h2><p>June 2012</p>"
 	}
 }
 
+//Wrote this function because I was too lazy to hardcode the positioning into the nodes
 function rule(length,cur,index) {
 	if (cur>=index) {
 		return 0;
@@ -59,6 +77,7 @@ function rule(length,cur,index) {
 	return newLength + rule(length-newLength,cur+1,index);
 }
 
+//Duplicated code... whatever. It's 4am in the morning
 function renderFrets() {
 	var neck = document.getElementById("neckBody");
 	var neckWidth = neck.style.width;
@@ -73,7 +92,6 @@ function renderFrets() {
 		ruleofeighteen(width-posish,cur+posish,count+1);
 		return;
 	}
-
 	ruleofeighteen(3300,0,1);
 }
 
@@ -81,7 +99,7 @@ function renderBands() {
 	var string = document.getElementById("bands");
 	for(var id in bands) {
 		var start = bands[id].start;
-		string.innerHTML = string.innerHTML + '<div class="hover"><div class="band" style="left: '+Math.floor(rule(3300,0,start))+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;"></article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover"><div class="band" style="left: '+Math.floor(rule(3300,0,start))+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+bands[id].preview+'</article></div>';	
 	}
 }
 
@@ -94,6 +112,12 @@ function renderVenues() {
 		else
 			var end = 24;
 		var width = Math.floor(rule(3300,0,end)-rule(3300,0,start));
-		string.innerHTML = string.innerHTML + '<div class="hover" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start))+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;"></article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start))+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+venues[id].preview+'</article></div>';	
 	}
 }
+
+$(document).ready(function(){
+	renderFrets();
+	renderBands();
+	renderVenues();
+})
