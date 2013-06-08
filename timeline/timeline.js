@@ -88,6 +88,13 @@ function renderFrets() {
 			return;
 		}
 		var posish = width/17.817;
+		if (count == 12)
+		{
+			neck.innerHTML = neck.innerHTML + '<div id="twelfthInlay" style="left: ' + Math.floor(cur+posish/2-14) + 'px;"><div>&nbsp;</div><div>&nbsp;</div></div>';
+		}
+		else if (count > 1 && count%2!=0 && count != 11 && count !=13) {
+			neck.innerHTML = neck.innerHTML + '<div class="guitarInlay" style="left: ' + Math.floor(cur+posish/2-14) + 'px;"></div>';
+		}
 		neck.innerHTML = neck.innerHTML + '<div class="guitarFret" style="left: ' + Math.floor(cur+posish) + 'px;"><h3>'+dates[count-1]+'</h3></div>';
 		ruleofeighteen(width-posish,cur+posish,count+1);
 		return;
@@ -99,7 +106,7 @@ function renderBands() {
 	var string = document.getElementById("bands");
 	for(var id in bands) {
 		var start = bands[id].start;
-		string.innerHTML = string.innerHTML + '<div class="hover"><div class="band" style="left: '+Math.floor(rule(3300,0,start))+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+bands[id].preview+'</article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover"><div class="band" style="left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+bands[id].preview+'</article></div>';	
 	}
 }
 
@@ -112,7 +119,7 @@ function renderVenues() {
 		else
 			var end = 24;
 		var width = Math.floor(rule(3300,0,end)-rule(3300,0,start));
-		string.innerHTML = string.innerHTML + '<div class="hover" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start))+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+venues[id].preview+'</article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+venues[id].preview+'</article></div>';	
 	}
 }
 
