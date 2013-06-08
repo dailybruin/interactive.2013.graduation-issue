@@ -36,10 +36,19 @@ var bands = {
 }
 
 var venues = {
-	midSesh:{start:3,end:12},
-	treeHouse:{start:6},
-	coOp:{start:7},
-	outsideWW:{start:20}
+	midSesh:{
+		start:3,
+		end:12
+	},
+	treeHouse:{
+		start:6
+	},
+	coOp:{
+		start:7
+	},
+	outsideWW:{
+		start:20
+	}
 }
 
 function rule(length,cur,index) {
