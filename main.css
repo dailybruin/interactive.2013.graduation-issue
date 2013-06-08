@@ -25,7 +25,7 @@ a:active {
 }
 
 h1, h2, h3, h4 {
-    font-weight: 300;
+    font-weight: 700;
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -76,6 +76,10 @@ aside {
     border-left: 1px solid rgba(0,0,0, 0.1);
 }
 
+aside h1 {
+    font-weight: 300;
+}
+
 aside iframe {
     margin: 5px 0 10px 0;
 }
@@ -98,7 +102,7 @@ footer {
 #plate {
     padding: 5px 0 0 10px;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;  
+    font-weight: 700;  
     font-size: 1.2em;
 }
 
@@ -120,4 +124,112 @@ footer {
     text-align: center;
     font-size: 5em;
     margin: 0 0 55px 0;
+    font-weight: 300;
+}
+
+/* NEWS TILES */
+.tile
+{
+    padding: 0;
+    margin: 5px;
+    position: relative;
+    float: left;
+}
+
+.smallsquare {
+    
+}
+
+.horizontal {
+    
+}
+
+.vertical {
+    
+}
+
+.fullwidth {
+    
+}
+
+.largesquare {
+    width: 300px;
+    height: 300px;
+}
+
+    .tile h3
+    {
+        color: #fff;
+        border-right: 1px solid rgba(255,255,255,0.15);
+        border-top: 1px solid rgba(255,255,255,0.15);
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0.1em 0.3em 0.1em 0.4em;
+        margin: 0;
+        font-weight: normal;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        /*display: none;*/
+    }
+
+        .tile:hover > h3
+        {
+            border-right: 1px solid rgba(255,255,255,0.3);
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .tile:hover > .tile-decoration
+        {
+            -webkit-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.3);
+            -moz-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.3);
+            box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.3);
+        }
+
+.tile-decoration
+{
+    /* border */
+    -webkit-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.15);
+    -moz-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.15);
+    box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.15);
+    width: 100%;
+    height: 100%;
+    /* gradient (generated with http://www.colorzilla.com/gradient-editor/) */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0)), color-stop(99%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.8) 99%,rgba(0,0,0,0.8) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.caption
+{
+    vertical-align:bottom;
+    bottom:0;
+    position:absolute;
+    right:0;
+    margin: 0 7px 7px 7px;
+}
+
+.caption h1
+{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2em;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    text-shadow: 0.05em 0.05em #000;
+}
+
+.caption h2
+{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin: 0;
+    text-shadow: 0 0 0 #000;
 }
