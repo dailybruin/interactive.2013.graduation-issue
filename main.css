@@ -9,6 +9,7 @@ body {
 a:link {
     text-decoration: none;
     color: #007ebf;
+    border-style: none;
 }
 
 a:visited {
@@ -95,7 +96,7 @@ footer {
 }
 
 #plate {
-    padding: 5px 0 0 5px;
+    padding: 5px 0 0 10px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;  
     font-size: 1.2em;
