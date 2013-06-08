@@ -26,25 +26,30 @@ var dates = [
 	];
 
 var bands = {
-	"Free Food":{
+	freefood:{
 		start:1,
-		preview:"<h2>Free Food</h2><p>October 2010</p>"
+		preview:"<h2>Free Food</h2><p>October 2010</p>",
+		content:"<p>Hello World</p>"
 	},
-	"Alto":{
+	alto:{
 		start:3,
-		preview:"<h2>Alto</h2><p>December 2010</p>"
+		preview:"<h2>Alto</h2><p>December 2010</p>",
+		content:"<p>Hello World</p>"
 	},
-	"The Ten Thousand":{
+	thetenthousand:{
 		start:6,
-		preview:"<h2>The Ten Thousand</h2><p>April 2011</p>"
+		preview:"<h2>The Ten Thousand</h2><p>April 2011</p>",
+		content:"<p>Hello World</p>"
 	},
-	"The Internship":{
+	theinternship:{
 		start:6,
-		preview:"<h2>The Internship</h2><p>(Manzanita)</p><p>April 2011</p>"
+		preview:"<h2>The Internship</h2><p>(Manzanita)</p><p>April 2011</p>",
+		content:"<p>Hello World</p>"
 	},
-	"Owl Fly South":{
+	owlflysouth:{
 		start:7,
-		preview:"<h2>Owl Fly South</h2><p>May 2011</p>"
+		preview:"<h2>Owl Fly South</h2><p>May 2011</p>",
+		content:"<p>Hello World</p>"
 	}
 }
 
@@ -52,19 +57,23 @@ var venues = {
 	midSesh:{
 		start:4,
 		end:13,
-		preview:"<h2>Midvale Session</h2><p>January 2011</p>"
+		preview:"<h2>Midvale Session</h2><p>January 2011</p>",
+		content:"<p>Hello World</p>"
 	},
 	treeHouse:{
 		start:7,
-		preview:"<h2>Treehouse Open Mic</h2><p>April 2011</p>"
+		preview:"<h2>Treehouse Open Mic</h2><p>April 2011</p>",
+		content:"<p>Hello World</p>"
 	},
 	coOp:{
 		start:8,
-		preview:"<h2>UCLA Radio Presents the first Co-op show</h2><p>May 2011</p>"
+		preview:"<h2>UCLA Radio Presents the first Co-op show</h2><p>May 2011</p>",
+		content:"<p>Hello World</p>"
 	},
 	outsideWW:{
 		start:21,
-		preview:"<h2>All the bands start playing outside of Westwood</h2><p>June 2012</p>"
+		preview:"<h2>All the bands start playing outside of Westwood</h2><p>June 2012</p>",
+		content:"<p>Hello World</p>"
 	}
 }
 
@@ -106,7 +115,7 @@ function renderBands() {
 	var string = document.getElementById("bands");
 	for(var id in bands) {
 		var start = bands[id].start;
-		string.innerHTML = string.innerHTML + '<div class="hover"><div class="band" style="left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+bands[id].preview+'</article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover" id="'+id+'"><div class="band" style="left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+bands[id].preview+'</article></div>';	
 	}
 }
 
@@ -119,7 +128,7 @@ function renderVenues() {
 		else
 			var end = 24;
 		var width = Math.floor(rule(3300,0,end)-rule(3300,0,start));
-		string.innerHTML = string.innerHTML + '<div class="hover" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+venues[id].preview+'</article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover" id="'+id+'" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+venues[id].preview+'</article></div>';	
 	}
 }
 
@@ -127,4 +136,44 @@ $(document).ready(function(){
 	renderFrets();
 	renderBands();
 	renderVenues();
+
+	$('.hover').click(function(e){
+		var id = $(this).attr("id");
+		console.log(id);
+		console.log(bands[id]);
+		if(bands[id])
+		{
+			$('#backdrop').fadeIn(1000);
+			$('#lightbox').fadeIn(1000,function(){
+				$('#lightbox').html(bands[id].content);
+			});
+		}
+		else if(venues[id])
+		{
+			$('#backdrop').fadeIn(1000);
+			$('#lightbox').fadeIn(1000,function(){
+				$('#lightbox').html(venues[id].content);
+			});
+		}
+		e.preventDefault();
+	});
+
+	$('#backdrop').click(function(e){
+		$('#backdrop').fadeOut(1000);
+		$('#lightbox').fadeOut(1000,function(){
+			$('#lightbox').html('<img class="loading" src="image/ajax-loader.gif" alt="loading...">');
+		});
+		e.preventDefault();
+	});
+
+	$(document).keyup(function(e){
+        if (e.keyCode==27)
+        {
+            $('#backdrop').fadeOut(1000);
+			$('#lightbox').fadeOut(1000,function(){
+				$('#lightbox').html('<img class="loading" src="image/ajax-loader.gif" alt="loading...">');
+			});
+			e.preventDefault();
+        }
+    });
 })
