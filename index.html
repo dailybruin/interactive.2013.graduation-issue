@@ -3,9 +3,10 @@
     <head>
         <title>Daily Bruin | Graduation 2012</title>
         <link href="main.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
         <script src="main.js" type="text/javascript"></script>
+        <script src="generateTiles.js" type="text/javascript"></script>
     </head>   
     <body>
         <div id="page">
@@ -14,16 +15,16 @@
                     <a href="http://dailybruin.com"><img src="image/nameplate_simple.png"/></a>
                     <span>Graduation Issue 2013</span>
                 </div>
-                <h1 id="tagline">This is your story.</h1>
+                <a href="http://dailybruin.com/grad2013/"><h1 id="tagline">This is your story.</h1></a>
             </header>
             <nav>
                 <span class="tease">Read Grad Issue stories: </span>
-                <a id="news" href="#">News</a>
-                <a id="sports" href="#">Sports</a>
-                <a id="aande" href="#">A&amp;E</a>
-                <a id="opinion" href="#">Opinion</a>
-                <a id="radio" href="#">Radio</a>
-                <a id="video" href="#">Video</a>
+                <a id="news" href="section/news">News</a>
+                <a id="sports" href="section/sports">Sports</a>
+                <a id="aande" href="sections/aande">A&amp;E</a>
+                <a id="opinion" href="columns">Opinion</a>
+                <a id="radio" href="section/radio">Radio</a>
+                <a id="video" href="section/video">Video</a>
             </nav>
             <div id="content">
                 <aside>
@@ -36,10 +37,98 @@
                     <iframe src="http://snapwidget.com/in/?h=bXl1Y2xhc3Rvcnl8aW58MTMwfDN8M3x8bm98NXxub25l" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:405px; height: 405px" ></iframe>
                     <h1>Your <strong>Music</strong></h1>
                     <!-- Rdio -->
-                    <iframe width="400" height="400" src="https://rd.io/i/QUxnDzNo9Xo/" frameborder="0"></iframe>
+                    <iframe width="400" height="400" src="https://rd.io/i/QSY1cTNmdwg/" frameborder="0"></iframe>
                 </aside>
                 <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div id="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <!-- top -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile horizontal"; style="background-image: url('image/tile/photo-yearinthelife.jpg')"><h3 class="arts">interactive feature</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Year in the Life</h1>
+                                                    <h2>Feeling nostalgic? Relive your year in photos.</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- top right -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile smallsquare"; style="background-image: url('image/tile/news-deferredaction.jpg')"><h3 class="arts">news</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Clearing a path</h1>
+                                                    <h2>Francisco Lopez finds job security.</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- left vertical -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile vertical"; style="background-image: url('image/tile/farmersmarket.jpg')"><h3 class="arts">news</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Market Musings</h1>
+                                                    <h2>Meet some of Broxton Avenue&rsquo;s Farmers&rsquo; Market regulars.</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- secondary center -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile smallsquare-fix1"; style="background-image: url('image/tile/sports-BBbates.jpg')"><h3 class="arts">sports</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>B.B. Bates</h1>
+                                                    <h2>Female player of the year</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- secondary right -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile smallsquare-fix2"; style="background-image: url('image/tile/sports-barr.jpg')"><h3 class="arts">sports</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Anthony Barr</h1>
+                                                    <h2>Male player of the year</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- tertiary -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile horizontal"; style="background-image: url('image/tile/ae-bands.jpg')"><h3 class="arts">arts &amp; entertainment</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Sounds like Westwood Spirit</h1>
+                                                    <h2>Scroll through the history of UCLA's underground music scene.</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- bottom left -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile horizontal"; style="background-image: url('image/tile/30COLUMNS.jpg')"><h3 class="arts">opinion</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Graduation Columns</h1>
+                                                    <h2>Daily Bruin&rsquo;s seniors sign off, and members of campus look back.</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
+                    <!-- bottom right -->
+                    <a href="http://dailybruin.com/2013/01/18/qa-rapper-macklemore-talks-thrifting-hip-hop-and-politics/">
+                            <div class="tile smallsquare"; style="background-image: url('image/tile/th.myths.janss.jpg')"><h3 class="arts">photo</h3>
+                                    <div class="tile-decoration-slight">
+                                            <div class="caption">
+                                                    <h1>Orientation Myths</h1>
+                                                    <h2>Photo illustrations bring the legends to life.</h2>
+                                            </div>
+                                    </div>
+                            </div>
+                    </a>
                 </article>
             </div>
             <footer>
