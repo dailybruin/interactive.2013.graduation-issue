@@ -103,7 +103,7 @@ footer {
     padding: 5px 0 0 10px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;  
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 #plate img {
@@ -125,6 +125,7 @@ footer {
     font-size: 5em;
     margin: 0 0 55px 0;
     font-weight: 300;
+    color: #000;
 }
 
 #intro {
@@ -185,23 +186,19 @@ footer {
         top: 0;
         padding: 0.1em 0.3em 0.1em 0.4em;
         margin: 0;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 0.7em;
+        text-shadow: 0 0 2px #000;
         text-transform: uppercase;
+        background-color: rgba(0,0,0, 0.4);
         /*display: none;*/
     }
 
-        .tile:hover > h3
-        {
-            border-right: 1px solid rgba(255,255,255,0.3);
-            border-top: 1px solid rgba(255,255,255,0.3);
-        }
-
         .tile:hover > .tile-decoration
         {
-            -webkit-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.3);
-            -moz-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.3);
-            box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.3);
+            -webkit-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.6);
+            -moz-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.6);
+            box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.6);
         }
 
 .tile-decoration
@@ -222,12 +219,30 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
+.tile-decoration-slight
+{
+    /* border */
+    -webkit-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.15);
+    -moz-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.15);
+    box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.15);
+    width: 100%;
+    height: 100%;
+    /* gradient (generated with http://www.colorzilla.com/gradient-editor/) */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(75%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
 .caption
 {
     vertical-align:bottom;
     bottom:0;
     position:absolute;
-    right:0;
+    left:0;
     margin: 0 7px 7px 7px;
 }
 
@@ -238,7 +253,7 @@ footer {
     color: #fff;
     font-size: 1.5em;
     font-weight: 700;
-    margin: 0 0 4px 0;
+    margin: 0 0 2px 0;
     text-shadow: 0.05em 0.05em #000;
 }
 
@@ -250,4 +265,5 @@ footer {
     font-weight: normal;
     margin: 0;
     text-shadow: 0 0 0 #000;
+    line-height: 1.5em;
 }
