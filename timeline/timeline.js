@@ -28,28 +28,108 @@ var dates = [
 var bands = {
 	freefood:{
 		start:1,
-		preview:"<h2>Free Food</h2><p>October 2010</p>",
-		content:"<p>Hello World</p>"
+		preview:"<img src='image/media/thumbs/freefood.jpg' alt='Free Food'><h2>Free Food</h2><p>October 2010</p>",
+		content:'<h1>Free Food</h1><h3>October 2010</h3><div id="slideshowcontainer">\
+        &nbsp;\
+        <div id="slideshow">\
+          <div id="images">\
+            <img src="image/media/freefood/1.JPG"/>\
+            <img src="image/media/freefood/2.JPG"/>\
+            <img src="image/media/freefood/3.JPG"/>\
+            <img src="image/media/freefood/4.JPG"/>\
+            <img src="image/media/freefood/5.JPG"/>\
+            <img src="image/media/freefood/6.JPG"/>\
+            <img src="image/media/freefood/7.JPG"/>\
+            <img src="image/media/freefood/8.JPG"/>\
+          </div>\
+        </div>\
+        </div>\
+        <div id="thumbnails">\
+        </div>'
 	},
 	alto:{
 		start:3,
-		preview:"<h2>Alto</h2><p>December 2010</p>",
-		content:"<p>Hello World</p>"
+		preview:"<img src='image/media/thumbs/alto.jpg' alt='Alto'><h2>Alto</h2><p>December 2010</p>",
+		content:'<h1>Alto</h1><h3>December 2010</h3><div id="slideshowcontainer">\
+        &nbsp;\
+        <div id="slideshow">\
+          <div id="images">\
+            <img src="image/media/alto/1.JPG"/>\
+            <img src="image/media/alto/2.JPG"/>\
+            <img src="image/media/alto/3.JPG"/>\
+            <img src="image/media/alto/4.JPG"/>\
+            <img src="image/media/alto/5.JPG"/>\
+            <img src="image/media/alto/6.JPG"/>\
+            <img src="image/media/alto/7.JPG"/>\
+            <img src="image/media/alto/8.JPG"/>\
+          </div>\
+        </div>\
+        </div>\
+        <div id="thumbnails">\
+        </div>'
 	},
 	thetenthousand:{
 		start:6,
-		preview:"<h2>The Ten Thousand</h2><p>April 2011</p>",
-		content:"<p>Hello World</p>"
+		preview:"<img src='image/media/thumbs/tenthousand.jpg' alt='The Ten Thousand'><h2>The Ten Thousand</h2><p>April 2011</p>",
+		content:'<h1>The Ten Thousand</h1><h3>April 2011</h3><div id="slideshowcontainer">\
+        &nbsp;\
+        <div id="slideshow">\
+          <div id="images">\
+            <img src="image/media/tenthousand/1.JPG"/>\
+            <img src="image/media/tenthousand/2.JPG"/>\
+            <img src="image/media/tenthousand/3.JPG"/>\
+            <img src="image/media/tenthousand/4.JPG"/>\
+            <img src="image/media/tenthousand/5.JPG"/>\
+            <img src="image/media/tenthousand/6.JPG"/>\
+            <img src="image/media/tenthousand/7.JPG"/>\
+            <img src="image/media/tenthousand/8.JPG"/>\
+          </div>\
+        </div>\
+        </div>\
+        <div id="thumbnails">\
+        </div>'
 	},
 	theinternship:{
 		start:6,
-		preview:"<h2>The Internship</h2><p>(Manzanita)</p><p>April 2011</p>",
-		content:"<p>Hello World</p>"
+		preview:"<img src='image/media/thumbs/theinternship.jpg' alt='The Internship'><h2>Manzanita</h2><p>(The Internship)</p><p>April 2011</p>",
+		content:'<h1>Manzanita</h1><h3>Started as "The Internship" in April 2011. Became "Manzanita" in October 2012.</h3><div id="slideshowcontainer">\
+        &nbsp;\
+        <div id="slideshow">\
+          <div id="images">\
+            <img src="image/media/theinternship/1.JPG"/>\
+            <img src="image/media/theinternship/2.JPG"/>\
+            <img src="image/media/theinternship/3.JPG"/>\
+            <img src="image/media/theinternship/4.JPG"/>\
+            <img src="image/media/theinternship/5.JPG"/>\
+            <img src="image/media/theinternship/6.JPG"/>\
+            <img src="image/media/theinternship/7.JPG"/>\
+            <img src="image/media/theinternship/8.JPG"/>\
+          </div>\
+        </div>\
+        </div>\
+        <div id="thumbnails">\
+        </div>'
 	},
 	owlflysouth:{
 		start:7,
-		preview:"<h2>Owl Fly South</h2><p>May 2011</p>",
-		content:"<p>Hello World</p>"
+		preview:"<img src='image/media/thumbs/owlflysouth.jpg' alt='Owl Fly South'><h2>Owl Fly South</h2><p>May 2011</p>",
+		content:'<h1>Owl Fly South</h1><h3>May 2011</h3><div id="slideshowcontainer">\
+        &nbsp;\
+        <div id="slideshow">\
+          <div id="images">\
+            <img src="image/media/owlflysouth/1.JPG"/>\
+            <img src="image/media/owlflysouth/2.JPG"/>\
+            <img src="image/media/owlflysouth/3.JPG"/>\
+            <img src="image/media/owlflysouth/4.JPG"/>\
+            <img src="image/media/owlflysouth/5.JPG"/>\
+            <img src="image/media/owlflysouth/6.JPG"/>\
+            <img src="image/media/owlflysouth/7.JPG"/>\
+            <img src="image/media/owlflysouth/8.JPG"/>\
+          </div>\
+        </div>\
+        </div>\
+        <div id="thumbnails">\
+        </div>'
 	}
 }
 
@@ -57,23 +137,24 @@ var venues = {
 	midSesh:{
 		start:4,
 		end:13,
-		preview:"<h2>Midvale Session</h2><p>January 2011</p>",
-		content:"<p>Hello World</p>"
-	},
-	treeHouse:{
-		start:7,
-		preview:"<h2>Treehouse Open Mic</h2><p>April 2011</p>",
-		content:"<p>Hello World</p>"
-	},
-	coOp:{
-		start:8,
-		preview:"<h2>UCLA Radio Presents the first Co-op show</h2><p>May 2011</p>",
-		content:"<p>Hello World</p>"
-	},
-	outsideWW:{
-		start:21,
-		preview:"<h2>All the bands start playing outside of Westwood</h2><p>June 2012</p>",
-		content:"<p>Hello World</p>"
+		preview:"<img src='image/media/thumbs/midvale.jpg' alt='Owl Fly South'><h2>Midvale Sessions</h2><p>January 2011</p>",
+		content:'<h1>Midvale Sessions</h1><h3>January 2011 - October 2011</h3><div id="slideshowcontainer">\
+        &nbsp;\
+        <div id="slideshow">\
+          <div id="images">\
+            <img src="image/media/midvale/1.JPG"/>\
+            <img src="image/media/midvale/2.JPG"/>\
+            <img src="image/media/midvale/3.JPG"/>\
+            <img src="image/media/midvale/4.JPG"/>\
+            <img src="image/media/midvale/5.JPG"/>\
+            <img src="image/media/midvale/6.JPG"/>\
+            <img src="image/media/midvale/7.JPG"/>\
+            <img src="image/media/midvale/8.JPG"/>\
+          </div>\
+        </div>\
+        </div>\
+        <div id="thumbnails">\
+        </div>'
 	}
 }
 
@@ -111,15 +192,15 @@ function renderFrets() {
 	ruleofeighteen(3300,0,1);
 }
 
-function renderBands() {
+/**function renderBands() {
 	var string = document.getElementById("bands");
 	for(var id in bands) {
 		var start = bands[id].start;
 		string.innerHTML = string.innerHTML + '<div class="hover" id="'+id+'"><div class="band" style="left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+bands[id].preview+'</article></div>';	
 	}
-}
+}**/
 
-function renderVenues() {
+function renderBands() {
 	for(var id in venues) {
 		var string = document.getElementById(id);
 		var start = venues[id].start;
@@ -128,8 +209,101 @@ function renderVenues() {
 		else
 			var end = 24;
 		var width = Math.floor(rule(3300,0,end)-rule(3300,0,start));
-		string.innerHTML = string.innerHTML + '<div class="hover" id="'+id+'" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start)+107)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start))+'px;">'+venues[id].preview+'</article></div>';	
+		string.innerHTML = string.innerHTML + '<div class="hover" id="'+id+'" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start)+207)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start)+207)+'px;">'+venues[id].preview+'</article></div>';	
 	}
+}
+
+function renderVenues() {
+	for(var id in bands) {
+		var string = document.getElementById(id);
+		var start = bands[id].start;
+		if(bands[id].end)
+			var end = bands[id].end;
+		else
+			var end = 24;
+		var width = Math.floor(rule(3300,0,end)-rule(3300,0,start));
+		string.innerHTML = string.innerHTML + '<div class="hover" id="'+id+'" style="height: inherit;"><div class="venue" style="width: '+width+'px; left: '+Math.floor(rule(3300,0,start)+207)+'px;"></div><article class="preview" style="left: '+Math.floor(rule(3300,0,start)+207)+'px;">'+bands[id].preview+'</article></div>';	
+	}
+}
+
+function loadJSlider() {
+
+    var imageString = $('#images').html();
+    $('#thumbnails').html(imageString);
+    var numImages = 0;
+    $('#slideshow img').each(function(){numImages++;}).hide().first().show();
+    $('#thumbnails img').eq(0).css({'border':'5px solid rgba(0,0,255,0.5)','margin':'0px'});
+    $('#slideshowcontainer').append('<div id="picnavleft" class="picnav"><a href="#" class="arrows">&lt;</a></div><div id="picnavright" class="picnav"><a href="#" class="arrows">&gt;</a></div>');
+
+    var heightImage = $('#slideshow img').height();
+    var heightNav = $('.arrows').eq(0).height();
+    var paddingOffset = Math.floor((heightImage-heightNav)/2);
+    var heightAdjusted = heightImage-paddingOffset;
+    $('.picnav').css({'margin-top':paddingOffset});
+
+    var curPicIndex = 0
+    $('#picnavright').click(
+        function()
+        {
+            $('#slideshow img').eq(curPicIndex).hide("slide", {direction: "left"}, 700);
+            $('#thumbnails img').eq(curPicIndex).css({'border':'none','margin':'5px'});
+            if (curPicIndex < numImages-1)
+                $('#slideshow img').eq(++curPicIndex).show("slide", {direction: "right"}, 700);
+            else
+            {
+                curPicIndex=0;
+                $('#slideshow img').eq(curPicIndex).show("slide", {direction: "right"}, 700);
+            }
+            $('#thumbnails img').eq(curPicIndex).css({'border':'5px solid rgba(0,0,255,0.5)','margin':'0px'});
+            $('#thumbnails').scrollLeft(curPicIndex * 114);
+        }
+    );
+
+    $('#picnavleft').click(
+        function()
+        {
+            $('#slideshow img').eq(curPicIndex).hide("slide", {direction: "right"}, 700);
+            $('#thumbnails img').eq(curPicIndex).css({'border':'none','margin':'5px'});
+            if (curPicIndex > 0)
+                $('#slideshow img').eq(--curPicIndex).show("slide", {direction: "left"}, 700);
+            else
+            {
+                curPicIndex=numImages-1;
+                $('#slideshow img').eq(curPicIndex).show("slide", {direction: "left"}, 700);
+            }
+            $('#thumbnails img').eq(curPicIndex).css({'border':'5px solid rgba(0,0,255,0.5)','margin':'0px'});
+            $('#thumbnails').scrollLeft(curPicIndex * 114);
+        }
+    );
+
+    $('#thumbnails img').click(
+        function()
+        {
+            if (curPicIndex!=$(this).index())
+            {
+                if (curPicIndex<$(this).index())
+                {
+                    $('#slideshow img').eq(curPicIndex).hide("slide", {direction: "left"}, 700);
+                    $('#thumbnails img').eq(curPicIndex).css({'border':'none','margin':'5px'});
+                    curPicIndex = $(this).index();
+                    $('#slideshow img').eq(curPicIndex).show("slide", {direction: "right"}, 700);
+                    $('#thumbnails img').eq(curPicIndex).css({'border':'5px solid rgba(0,0,255,0.5)','margin':'0px'});
+                }
+                else
+                {
+                    $('#slideshow img').eq(curPicIndex).hide("slide", {direction: "right"}, 700);
+                    $('#thumbnails img').eq(curPicIndex).css({'border':'none','margin':'5px'});
+                    curPicIndex = $(this).index();
+                    $('#slideshow img').eq(curPicIndex).show("slide", {direction: "left"}, 700);
+                    $('#thumbnails img').eq(curPicIndex).css({'border':'5px solid rgba(0,0,255,0.5)','margin':'0px'});
+                }
+            }
+        }
+    );
+}
+
+function destructJSlider() {
+	$('#picnavright, #picnavleft, #thumbnails').unbind();
 }
 
 $(document).ready(function(){
@@ -146,6 +320,7 @@ $(document).ready(function(){
 			$('#backdrop').fadeIn(1000);
 			$('#lightbox').fadeIn(1000,function(){
 				$('#lightbox').html(bands[id].content);
+				loadJSlider();
 			});
 		}
 		else if(venues[id])
@@ -153,6 +328,7 @@ $(document).ready(function(){
 			$('#backdrop').fadeIn(1000);
 			$('#lightbox').fadeIn(1000,function(){
 				$('#lightbox').html(venues[id].content);
+				loadJSlider();
 			});
 		}
 		e.preventDefault();
@@ -163,6 +339,7 @@ $(document).ready(function(){
 		$('#lightbox').fadeOut(1000,function(){
 			$('#lightbox').html('<img class="loading" src="image/ajax-loader.gif" alt="loading...">');
 		});
+		destructJSlider();
 		e.preventDefault();
 	});
 
@@ -173,6 +350,7 @@ $(document).ready(function(){
 			$('#lightbox').fadeOut(1000,function(){
 				$('#lightbox').html('<img class="loading" src="image/ajax-loader.gif" alt="loading...">');
 			});
+			destructJSlider();
 			e.preventDefault();
         }
     });
