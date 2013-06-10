@@ -29,7 +29,9 @@ var bands = {
 	freefood:{
 		start:1,
 		preview:"<img src='image/media/thumbs/freefood.jpg' alt='Free Food'><h2>Free Food</h2><p>October 2010</p>",
-		content:'<h1>Free Food</h1><h3>October 2010</h3><div id="slideshowcontainer">\
+		content:'<h1>Free Food</h1><h3>October 2010</h3>\
+        <p>The funk and hip-hop fusion group, Free Food, began slowly playing music together as early as fall 2010, and soon formed a full band. Centered around the rap stylings of fourth-year ethnomusicology student Oliver Brown, who performs under the stage name Scaredy Kat MC, Free Food combines Brown’s rapping with a five-piece brass and rhythm section.</p>\
+        <div id="slideshowcontainer">\
         &nbsp;\
         <div id="slideshow">\
           <div id="images">\
@@ -44,13 +46,16 @@ var bands = {
           </div>\
         </div>\
         </div>\
+        <aside class="intCredit"><em><strong>Brandon Choe</strong> / Daily Bruin</em></aside>\
         <div id="thumbnails">\
         </div>'
 	},
 	alto:{
 		start:3,
 		preview:"<img src='image/media/thumbs/alto.jpg' alt='Alto'><h2>Alto</h2><p>December 2010</p>",
-		content:'<h1>Alto</h1><h3>December 2010</h3><div id="slideshowcontainer">\
+		content:'<h1>Alto</h1><h3>December 2010</h3>\
+        <p>The indie-folk band that dominated Spring Sing last year had been performing as a duo between fourth-year music education and music performance student Jessica Jones on double bass and fourth-year ethnomusicology student Nicolette Yarbrough on violin since late 2010. By the end of 2011, they had added fourth-year music performance and psychology student Veronica Rogers on viola and UCLA alumnus Joseph Lorge on guitar to round out their alternative sound.</p>\
+        <div id="slideshowcontainer">\
         &nbsp;\
         <div id="slideshow">\
           <div id="images">\
@@ -65,13 +70,16 @@ var bands = {
           </div>\
         </div>\
         </div>\
+        <aside class="intCredit"><em><strong>Daily Bruin Video</strong></em></aside>\
         <div id="thumbnails">\
         </div>'
 	},
 	thetenthousand:{
 		start:6,
 		preview:"<img src='image/media/thumbs/tenthousand.jpg' alt='The Ten Thousand'><h2>The Ten Thousand</h2><p>April 2011</p>",
-		content:'<h1>The Ten Thousand</h1><h3>April 2011</h3><div id="slideshowcontainer">\
+		content:'<h1>The Ten Thousand</h1><h3>April 2011</h3>\
+        <p>After hearing about the live music at Midvale Sessions, the members of the rock ‘n’ roll band The Ten Thousand quickly formed and began performing. Led by the vocals of UCLA alumnus Kevin Daye, the guitar solos of fourth-year psychology student Dylan Robin and the bass lines of fourth-year jazz studies student Nathan Kersey-Wilson, The Ten Thousand produce a West coast rock ‘n’ roll sound.</p>\
+        <div id="slideshowcontainer">\
         &nbsp;\
         <div id="slideshow">\
           <div id="images">\
@@ -86,13 +94,16 @@ var bands = {
           </div>\
         </div>\
         </div>\
+        <aside class="intCredit"><em><strong>Brandon Choe</strong> / Daily Bruin</em></aside>\
         <div id="thumbnails">\
         </div>'
 	},
 	theinternship:{
 		start:6,
 		preview:"<img src='image/media/thumbs/theinternship.jpg' alt='The Internship'><h2>Manzanita</h2><p>(The Internship)</p><p>April 2011</p>",
-		content:'<h1>Manzanita</h1><h3>Started as "The Internship" in April 2011. Became "Manzanita" in October 2012.</h3><div id="slideshowcontainer">\
+		content:'<h1>Manzanita (The Internship)</h1><h3>April 2011</h3>\
+        <p>The self-proclaimed “thoughtful rock” group began as The Internship in April 2011, with the sole goal to play for the growing crowds at Midvale Sessions. The group soon accomplished this goal, accompanying its artful rock guitars with the soulful voice of UCLA alumnus Moses Sumney, a former Daily Bruin contributor. After a lineup change in 2012, the band became Manzanita, and have continued to play its brand of rock ‘n’ roll.</p>\
+        <div id="slideshowcontainer">\
         &nbsp;\
         <div id="slideshow">\
           <div id="images">\
@@ -107,13 +118,16 @@ var bands = {
           </div>\
         </div>\
         </div>\
+        <aside class="intCredit"><em><strong>Brandon Choe</strong> / Daily Bruin</em></aside>\
         <div id="thumbnails">\
         </div>'
 	},
 	owlflysouth:{
 		start:7,
 		preview:"<img src='image/media/thumbs/owlflysouth.jpg' alt='Owl Fly South'><h2>Owl Fly South</h2><p>May 2011</p>",
-		content:'<h1>Owl Fly South</h1><h3>May 2011</h3><div id="slideshowcontainer">\
+		content:'<h1>Owl Fly South</h1><h3>May 2011</h3>\
+        <p>Beginning as a duo between guitarist and fourth-year ethnomusicology student Braeden Henderson and drummer and third-year ethnomusicology student Oliver Dobrian, Owl Fly South fuses a traditional garage rock sound with hints of psychedelic and progressive rock. Now a four-piece rock ‘n’ roll band, Owl Fly South recently played the legendary Echo Theater in the Echo Park neighborhood of Los Angeles.</p>\
+        <div id="slideshowcontainer">\
         &nbsp;\
         <div id="slideshow">\
           <div id="images">\
@@ -128,6 +142,7 @@ var bands = {
           </div>\
         </div>\
         </div>\
+        <aside class="intCredit"><em><strong>Brandon Choe</strong> / Daily Bruin</em></aside>\
         <div id="thumbnails">\
         </div>'
 	}
@@ -138,7 +153,9 @@ var venues = {
 		start:4,
 		end:13,
 		preview:"<img src='image/media/thumbs/midvale.jpg' alt='Owl Fly South'><h2>Midvale Sessions</h2><p>January 2011</p>",
-		content:'<h1>Midvale Sessions</h1><h3>January 2011 - October 2011</h3><div id="slideshowcontainer">\
+		content:'<h1>Midvale Sessions</h1><h3>January 2011 - October 2011</h3>\
+        <p>Midvale Sessions was the catalyzing force of the music scene at UCLA, opening up an apartment to hundreds of students wanting to hear live music. Each of the 11 concerts held at Midvale Sessions featured magic by UCLA alumnus Aaron Rabkin, followed by sets from student bands playing original songs and covers of popular songs.</p>\
+        <div id="slideshowcontainer">\
         &nbsp;\
         <div id="slideshow">\
           <div id="images">\
@@ -153,6 +170,7 @@ var venues = {
           </div>\
         </div>\
         </div>\
+        <aside class="intCredit"><em><strong>Leah Rom</strong> / Daily Bruin</em></aside>\
         <div id="thumbnails">\
         </div>'
 	}
