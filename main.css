@@ -141,7 +141,13 @@ footer {
 #printrefer {
     width: 750px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+#printissue {
+    display: block;
+    margin: 20px 0 -25px 10px;
+    line-height: 2.5em;
 }
 
 .section-head {
