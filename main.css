@@ -138,6 +138,12 @@ footer {
     overflow: hidden;
 }
 
+#printrefer {
+    width: 750px;
+    text-align: center;
+    padding-top: 20px;
+}
+
 .section-head {
     margin: 10px 5px 5px 0;
 }
@@ -206,9 +212,9 @@ footer {
 
         .tile:hover > .tile-decoration
         {
-            -webkit-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.6);
-            -moz-box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.6);
-            box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,0.6);
+            -webkit-box-shadow:inset 0px 0px 20px 1px rgba(255,255,255,0.6);
+            -moz-box-shadow:inset 0px 0px 20px 1px rgba(255,255,255,0.6);
+            box-shadow:inset 0px 0px 20px 1px rgba(255,255,255,0.6);
         }
 
 .tile-decoration
@@ -247,6 +253,13 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
+        .tile:hover > .tile-decoration-slight
+        {
+            -webkit-box-shadow:inset 0px 0px 20px 1px rgba(255,255,255,0.6);
+            -moz-box-shadow:inset 0px 0px 20px 1px rgba(255,255,255,0.6);
+            box-shadow:inset 0px 0px 20px 1px rgba(255,255,255,0.6);
+        }
+
 .caption
 {
     vertical-align:bottom;
@@ -274,6 +287,6 @@ footer {
     font-size: 0.8em;
     font-weight: normal;
     margin: 0;
-    text-shadow: 0 0 0 #000;
+    text-shadow: 0.1em 0.1em #000;
     line-height: 1.5em;
 }

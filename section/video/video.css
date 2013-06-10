@@ -3,3 +3,7 @@
     margin: 10px auto 40px auto;
     overflow: hidden;
 }
+
+#photofeat h1 {
+    margin-bottom: 4px;
+}
