@@ -155,7 +155,9 @@ footer {
 }
 
 .printfront:hover {
-    -webkit-filter: brightness(10%);
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity: 0.9;
 }
 
 /* NEWS TILES */
