@@ -1,63 +1,170 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	padding: 15px;
+}
+
 #tlwrapper {
 	margin: 0 auto;
 	width: 1150px;
 	height: 500px;
 	position: relative;
-	overflow: scroll;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.intCredit{
+	border-left: none;
+	float: none;
+	text-align: right;
+	position: relative;
+	right: 20px;
+	bottom: 50px;
+	width: inherit;
+	font-size: 12px;
+	color: rgba(0,0,0,0.3);
+}
+
+#lightbox .intCredit {
+	right: 240px;
+	bottom: 30px;
 }
 
 #guitar {
-	width: 3000px;
+	width: 2753px;
+	height: inherit;
 }
 
 #guitarHead {
-	width: 500px;
-	height: 400px;
+	width: 200px;
+	height: 360px;
 	background-color: blue;
 	position: absolute;
 	top: 50%;
-	margin-top:-200px;
+	margin-top:-175px;
+	background-image: url('image/woodgrain.png');
+	-webkit-border-top-right-radius: 150px 50px;
+	-webkit-border-bottom-right-radius: 150px 50px;
+	-moz-border-radius-topright: 100px 50px;
+	-moz-border-radius-bottomright: 100px 50px;
+	border-top-right-radius: 180px 50px;
+	border-bottom-right-radius: 180px 50px;
+}
+
+#guitarHead ul {
+	list-style: none;
+	color: #fff;
+	margin-top: 45px;
+}
+
+#guitarHead li {
+	list-style: none;
+	margin: 20px 0;
+	line-height: 20px;
 }
 
 #guitarNeck {
-	width: 2500px;
+	width: 2546px;
 	height: 260px;
 	float: left;
 	position: absolute;
 	top: 50%;
-	left: 500px;
+	left: 200px;
 	margin-top: -130px;
+	border-left: 7px solid rgb(240,240,240);
 }
 
 #neckTop {
-	border-bottom: 10px solid yellow;
-	border-left: 2500px solid transparent;
+	border-bottom: 5px solid rgb(47,18,1);
+	border-left: 2546px solid transparent;
 }
 
 #neckBody {
 	width: inherit;
 	height: 226px;
-	background-color: yellow;
+	background-image: url('image/woodgrain.png');
+	background-repeat: repeat-x;
 	padding: 17px 0;
 	position: relative;
 	z-index: 0;
 }
 
+#neckBottom {
+	border-top: 5px solid rgb(47,18,1);
+	border-left: 2546px solid transparent;
+}
+
+#guitarBody {
+	width: 410px;
+	height: 500px;
+	margin-top: -7px;
+	background-image: url('image/bodygrain.png');
+	background-repeat: repeat;
+	float: right;
+	-webkit-border-top-left-radius: 75px 500px;
+	-webkit-border-bottom-left-radius: 75px 500px;
+	-moz-border-radius-topleft: 75px 500px;
+	-moz-border-radius-bottomleft: 75px 500px;
+	border-top-left-radius: 75px 500px;
+	border-bottom-left-radius: 75px 500px;
+	box-shadow: -10px 0 20px rgba(0,0,0,0.6);
+}
+
 .guitarString {
-	width: inherit;
+	width: 2753px;
 	height: 15px;
-	background-color: red;
+	background-image: url('image/guitarstring.png');
+	background-size: 8px 15px;
+	background-repeat: repeat;
 	margin: 30px 0;
+	margin-left: -207px;
 	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.guitarInlay {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -23px;
+	background-color: rgb(240,240,240);
+	z-index: -1;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#twelfthInlay {
+	width: 30px;
+	height: inherit;
+	position: absolute;
+	top: 20px;
+	z-index: -1;
+}
+
+#twelfthInlay div {
+	width: 30px;
+	height: 30px;
+	background-color: rgb(240,240,240);
+	z-index: -1;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 50px;
 }
 
 .guitarFret {
-	width: 10px;
+	width: 7px;
 	height: 260px;
 	position: absolute;
 	top: 0;
-	background-color: white;
-	z-index: 1;
+	background-color: rgb(240,240,240);
+	z-index: -1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
 .guitarFret h3 {
@@ -75,37 +182,156 @@
 	margin-bottom: 0;
 }
 
-#neckBottom {
-	border-top: 10px solid yellow;
-	border-left: 2500px solid transparent;
-}
-
 .band {
 	height: 30px;
 	width: 30px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
 	position: absolute;
 	top: -11px;
-	margin-left: -9px;
-	background-color: blue;
+	margin-left: -11px;
+	background-color: rgba(0,255,0,0.3);
 	z-index: 3;
 }
 
 .venue {
 	height: inherit;
 	position: absolute;
-	background-color: blue;
+	background-color: rgba(0,255,0,0.3);
 	z-index: 3;
 }
 
 .preview {
 	display: none;
-	width: 500px;
-	height: 200px;
-	background-color: orange;
+	width: 380px;
+	height: 135px;
+	background-color: rgb(250,250,250);
 	position: absolute;
 	z-index: 5;
+	box-shadow: 0 0 30px rgb(0,0,0);
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.preview img {
+	float: right;
+	height: 135px;
+}
+
+#theinternship .preview, #owlflysouth .preview {
+	margin-top: -150px;
+}
+
+.hover:hover {
+	cursor: pointer;
 }
 
 .hover:hover .preview {
 	display: block;
+}
+
+.hover:hover .band, .hover:hover .venue {
+	background-color: rgba(0,255,0,0.7);
+}
+
+#backdrop {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#lightbox {
+	width: 940px;
+	height: 530px;
+	padding: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -480px;
+	background-color: rgb(250,250,250);
+	display: none;
+	overflow-y: scroll;
+}
+
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -8px 0 0 -8px;
+}
+
+#slideshowcontainer {
+	width: 500px;
+	height: 350px;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+#slideshow {
+	width: 500px;
+	margin: 0 auto 0 auto;
+}
+
+#slideshow img {
+	width: 500px;
+	height: 300px;
+	display: none;
+	position: absolute;
+	overflow: hidden;
+}
+
+#images {
+}
+
+.picnav {
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	position: absolute;
+	background-color: rgba(0,120,255,0.7);
+	z-index: 9999;
+	line-height: 25px;
+}
+
+.arrows:link, .arrows:visited {
+	text-decoration: none;
+	color: #ccffff;
+}
+
+.arrows:hover, .arrows:active {
+	color: rgb(0,120,255);
+}
+
+#picnavleft {
+	left: 0;
+	text-align: center;
+	padding: 5px;
+}
+
+#picnavright {
+	right: 0;
+	text-align: center;
+	padding: 5px;
+}
+
+#thumbnails {
+	clear: both;
+	padding: 10px 0 10px 0;
+	white-space: nowrap;
+}
+
+#thumbnails img{
+	display: inline;
+	width: 100px;
+	margin: 5px;
+}
+
+#thumbnails:hover {
+	cursor: pointer;
 }
