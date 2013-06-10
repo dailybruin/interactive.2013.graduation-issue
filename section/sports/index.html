@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Bruin | Graduation 2012</title>
+        <link href="../../main.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="../../generateTiles.js" type="text/javascript"></script>
+    </head>   
+    <body>
+        <div id="page">
+            <header>
+                <div id="plate">
+                    <a href="http://dailybruin.com"><img src="../../image/nameplate_simple.png"/></a>
+                    <span>Graduation Issue 2013</span>
+                </div>
+                <a href="http://dailybruin.com/grad2013/"><h1 id="tagline">This is your story.</h1></a>
+            </header>
+            <nav>
+                <span class="tease">Read Grad Issue stories: </span>
+                <a id="news" href="section/news">News</a>
+                <a id="sports" href="section/sports">Sports</a>
+                <a id="aande" href="sections/aande">A&amp;E</a>
+                <a id="opinion" href="columns">Opinion</a>
+                <a id="radio" href="section/radio">Radio</a>
+                <a id="video" href="section/video">Video</a>
+            </nav>
+            <div id="content-narrow">
+                <h1 class="section-head">Sports</h1>
+                <script>
+                
+                    var content = [
+                        ["Advocating for student-athletes", "image", "http://dailybruin.com/2013/06/10/ncpa-continues-its-fight-for-student-athletes-well-being-benefits/"],
+                        ["A great team, an empty stadium", "image", "http://dailybruin.com/2013/06/10/ruff-housing-baseball-should-be-a-bigger-hit-with-students/"],
+                        ["The best Barr none", "th.sp.6.10.barr.jpg", "http://dailybruin.com/2013/06/10/junior-anthony-barr-remains-humble-despite-big-defensive-impact-elects-to-stay-at-ucla-for-senior-year/"],
+                        ["B.B. Bates: Fan to phenom", "th.sp.6.10.bates.jpg", "http://dailybruin.com/2013/06/10/senior-b-b-bates-went-from-a-ucla-softball-fan-to-a-bruin-phenom/"],
+                        ["Tennis hopes to carry sucess to next season", "th.sp.6.10.tennis.jpg", "http://dailybruin.com/2013/06/10/losing-only-twice-this-season-mens-tennis-had-a-memorable-year/"],
+                        ["Three Bruins place at track and field NCAAs", "th.sp.6.10.track.wrap.jpg", "http://dailybruin.com/2013/06/10/three-track-and-field-bruins-place-at-ncaas/"],
+                    ];
+                    
+                    MEDIA_ROOT = "image/";
+                    generateTiles(MEDIA_ROOT, content);
+                </script>
+            </div>
+            <footer>
+                &copy; 2013 <a href="http://dailybruin.com/">Daily Bruin</a>. Page design by <a href="http://about.me/harrisonliddiard/" target="blank">Harrison Liddiard</a>.
+            </footer>
+        </div>
+    </body>
+</html>

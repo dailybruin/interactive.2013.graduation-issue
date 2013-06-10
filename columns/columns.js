@@ -1,16 +1,20 @@
 $(document).ready(function(){
+    
+    $('.article').hide();
+    
     $(function(){
-
         // Bind the event.
         $(window).hashchange( function(){
             // Alerts every time the hash changes!
             console.log( location.hash );
-            switch (location.hash) {
-                case "#p01":
-                    $('#a01').show();
-                    break;
-                default:
-                    break;                
+            
+            if (location.hash == "") {
+                $('.article').hide();
+                $('#descriptor').show();
+            } else {
+                $('#descriptor').hide();
+                $('.article').hide();
+                $(location.hash).show();
             }
         });
 

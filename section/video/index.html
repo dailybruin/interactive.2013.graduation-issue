@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Bruin | Graduation 2012</title>
+        <link href="../../main.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="../../generateTiles.js" type="text/javascript"></script>
+    </head>   
+    <body>
+        <div id="page">
+            <header>
+                <div id="plate">
+                    <a href="http://dailybruin.com"><img src="../../image/nameplate_simple.png"/></a>
+                    <span>Graduation Issue 2013</span>
+                </div>
+                <a href="http://dailybruin.com/grad2013/"><h1 id="tagline">This is your story.</h1></a>
+            </header>
+            <nav>
+                <span class="tease">Read Grad Issue stories: </span>
+                <a id="news" href="section/news">News</a>
+                <a id="sports" href="section/sports">Sports</a>
+                <a id="aande" href="sections/aande">A&amp;E</a>
+                <a id="opinion" href="columns">Opinion</a>
+                <a id="radio" href="section/radio">Radio</a>
+                <a id="video" href="section/video">Video</a>
+            </nav>
+            <div id="content-narrow">
+                <h1 class="section-head">Video</h1>
+                <script>
+                
+                    var content = [
+                        ["Article title", "image.jpg", "http://dailybruin.com/"],
+                        ["Article title", "image.jpg", "http://dailybruin.com/"],
+                        ["Article title", "image.jpg", "http://dailybruin.com/"],
+                    ];
+                    
+                    MEDIA_ROOT = "image/";
+                    generateTiles(MEDIA_ROOT, content);
+                </script>
+            </div>
+            <footer>
+                &copy; 2013 <a href="http://dailybruin.com/">Daily Bruin</a>. Page design by <a href="http://about.me/harrisonliddiard/" target="blank">Harrison Liddiard</a>.
+            </footer>
+        </div>
+    </body>
+</html>

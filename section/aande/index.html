@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Bruin | Graduation 2012</title>
+        <link href="../../main.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="../../generateTiles.js" type="text/javascript"></script>
+    </head>   
+    <body>
+        <div id="page">
+            <header>
+                <div id="plate">
+                    <a href="http://dailybruin.com"><img src="../../image/nameplate_simple.png"/></a>
+                    <span>Graduation Issue 2013</span>
+                </div>
+                <a href="http://dailybruin.com/grad2013/"><h1 id="tagline">This is your story.</h1></a>
+            </header>
+            <nav>
+                <span class="tease">Read Grad Issue stories: </span>
+                <a id="news" href="section/news">News</a>
+                <a id="sports" href="section/sports">Sports</a>
+                <a id="aande" href="sections/aande">A&amp;E</a>
+                <a id="opinion" href="columns">Opinion</a>
+                <a id="radio" href="section/radio">Radio</a>
+                <a id="video" href="section/video">Video</a>
+            </nav>
+            <div id="content-narrow">
+                <h1 class="section-head">A&amp;E</h1>
+                <script>
+                
+                    var content = [
+                        ["Stitching for the stage", "th.ae.6.10.costume.jpg", "http://dailybruin.com/2013/06/10/costume-designers-display-work-at-design-showcase-west/"],
+                        ["&lsquo;Hozon&rsquo; breaks limits", "th.ae.6.10.king.jpg", "http://dailybruin.com/2013/06/10/students-breaks-limits-with-feature-length-film-hozon/"],
+                        ["Instructor finds bliss in yoga", "th.ae.6.10.marcngyuen.jpg", "http://dailybruin.com/2013/06/10/instructor-find-bliss-in-yoga-after-accident/"],
+                        ["&lsquo;The First Hope&rsquo; to show at LA film festival", "th.ae.6.10.white.jpg", "http://dailybruin.com/2013/06/10/graduate-students-films-to-be-screened-at-ucla-la-film-festival/"],
+                        ["A different kind of &lsquo;Internship&rsquo;", "th.ae.6.10.raphael.jpg", "http://dailybruin.com/2013/06/10/qa-alum-speaks-on-landing-a-role-in-the-internship/"],
+                        ["An organic sense of fashion", "th.ae.6.10.jenniferlee.jpg", "http://dailybruin.com/2013/06/10/science-student-follows-fashion-dreams-with-teen-vogue-internship/"],
+                        ["Student writes Top 40 tracks", "th.ae.6.10.jacobcampbell.jpg", "http://dailybruin.com/2013/06/10/dancers-choreography-experience-will-aid-teaching-in-spain/"],
+                        ["One destination, two passions", "th.ae.6.10.andrewcedar.jpg", "http://dailybruin.com/2013/06/10/songwriter-mixes-jazz-pop-to-write-top-40-tracks/"],
+                        ["Charting UCLA's underground music scene", "th.ae.6.10.bands.jpg", "http://graphics.dailybruin.com/timeline/"],
+                    ];
+                    
+                    MEDIA_ROOT = "image/";
+                    generateTiles(MEDIA_ROOT, content);
+                </script>
+            </div>
+            <footer>
+                &copy; 2013 <a href="http://dailybruin.com/">Daily Bruin</a>. Page design by <a href="http://about.me/harrisonliddiard/" target="blank">Harrison Liddiard</a>.
+            </footer>
+        </div>
+    </body>
+</html>

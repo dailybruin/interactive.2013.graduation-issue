@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Bruin | Graduation 2012</title>
+        <link href="../../main.css" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="../../generateTiles.js" type="text/javascript"></script>
+    </head>   
+    <body>
+        <div id="page">
+            <header>
+                <div id="plate">
+                    <a href="http://dailybruin.com"><img src="../../image/nameplate_simple.png"/></a>
+                    <span>Graduation Issue 2013</span>
+                </div>
+                <a href="http://dailybruin.com/grad2013/"><h1 id="tagline">This is your story.</h1></a>
+            </header>
+            <nav>
+                <span class="tease">Read Grad Issue stories: </span>
+                <a id="news" href="section/news">News</a>
+                <a id="sports" href="section/sports">Sports</a>
+                <a id="aande" href="sections/aande">A&amp;E</a>
+                <a id="opinion" href="columns">Opinion</a>
+                <a id="radio" href="section/radio">Radio</a>
+                <a id="video" href="section/video">Video</a>
+            </nav>
+            <div id="content-narrow">
+                <h1 class="section-head">News</h1>
+                <script>
+                
+                    var content = [
+                        ["New policy allows undocumented student&rsquo;s return to UCLA", "th.ns.6.10.deferredaction.jpg", "http://dailybruin.com/2013/06/10/undocumented-student-returns-to-ucla-as-a-result-of-deferred-action-policy/"],
+                        ["Commencement speaker aims for humor", "th.ns.6.10.shamash.jpg", "http://dailybruin.com/2013/06/10/graduating-speaker-hopes-to-contribute-humor-to-2013-commencement-ceremony-2/"],
+                        ["Final Farewell", "th.ns.6.10.serenalee.jpg", "http://dailybruin.com/2013/06/10/graduating-speaker-hopes-to-contribute-humor-to-2013-commencement-ceremony/"],
+                        ["Siblings fulfill father's dream", "th.ns.6.10.siblings.jpg", "http://dailybruin.com/2013/06/10/3-graduating-siblings-instill-bruin-tradition-in-family/"],
+                        ["Policy, politics and progress", "th.ns.6.10.legislation.graphic.jpg", "http://dailybruin.com/2013/06/10/the-daily-bruins-coverage-on-this-years-elections-policies/"],
+                        ["Students push for increased dialogue with UC President", "th.ns.6.10.students.picA.jpg", "http://dailybruin.com/2013/06/10/students-push-for-increased-communication-with-the-uc-office-of-the-president/"],
+                        ["Construction continues on the Hill", "th.ns.6.10.construction.jpg", "http://dailybruin.com/2013/06/10/construction-projects-aim-for-four-year-ucla-on-campus-housing-guarantee/"],
+                        ["Market Musings", "th.ns.6.10.farmersmarket.jpg", "http://dailybruin.com/2013/06/10/farmers-market-community-shares-advice-to-graduating-class/"],
+                        ["Graduating student&rsquo;s resilience, focus pay off", "image ", "http://dailybruin.com/2013/06/10/graduating-ucla-student-balanced-classes-financially-supported-her-family/"],
+                        ["Studying the disparity between clean water, access", "th.ns.6.10.torres.picA.jpg", "http://dailybruin.com/2013/06/10/grad-student-works-to-improve-water-quality-access-in-south-central-los-angeles/"],
+                        ["Local efforts toward global health", "th.ns.6.10.globalhealth.jpg", "http://dailybruin.com/2013/06/10/ucla-expands-student-opportunities-with-global-health-programs/"],
+                        ["Back to school – 40 years later", "th.ns.6.10.nipper.jpg", "http://dailybruin.com/2013/06/10/ucla-returning-student-has-new-appreciation-for-educatio/"],
+                    ];
+                    
+                    MEDIA_ROOT = "image/";
+                    generateTiles(MEDIA_ROOT, content);
+                </script>
+            </div>
+            <footer>
+                &copy; 2013 <a href="http://dailybruin.com/">Daily Bruin</a>. Page design by <a href="http://about.me/harrisonliddiard/" target="blank">Harrison Liddiard</a>.
+            </footer>
+        </div>
+    </body>
+</html>
