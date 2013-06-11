@@ -3,6 +3,22 @@ html, body {
 	height: 100%;
 }
 
+audio {
+    float: right;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.audio {
+    float: right;
+    text-align: left;
+    width: 300px;
+    font-size: small;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 1.2em;
+}
+
 .wrapper {
 	padding: 15px 250px 15px 250px;
 }
