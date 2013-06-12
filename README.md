@@ -1,6 +1,6 @@
 #Daily Bruin Graduation Issue 2013
 
-Live at [http://graphics.dailybruin.com](http://graphics.dailybruin.com).
+Live at [http://graphics.dailybruin.com/grad2013/](http://graphics.dailybruin.com/grad2013)
 
 ##Projects
 - `/` Landing page
